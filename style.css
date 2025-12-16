@@ -1,0 +1,85 @@
+:root {
+  --ivory: #f7f4f2;
+  --blush: #ead6dc;
+  --taupe: #bfaea3;
+  --cocoa: #3a2f2a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--ivory);
+  font-family: 'Inter', sans-serif;
+  color: var(--cocoa);
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 24px;
+  text-align: center;
+  background: linear-gradient(135deg, #f2e8e4, #ead6dc);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 60px 24px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.products h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.product-card {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.product-card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.payhip-buy-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #c97b93, #a64b67);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  color: #7a6a60;
+}
