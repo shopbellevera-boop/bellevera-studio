@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Bellevera Studio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script type="text/javascript" src="https://payhip.com/payhip.js"></script>
-<script type="text/javascript">
-  var PayhipConfig = {
-    enableCart: true
-  };
-</script>
-
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Payhip -->
   <script src="https://payhip.com/payhip.js"></script>
+  <script>
+    var PayhipConfig = { enableCart: true };
+  </script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header class="hero">
-  <h1>Design Your Dream Life — Digitally.</h1>
-  <p>Premium planners, journals, and templates for women who move with intention.</p>
+<header class="navbar">
+  <div class="logo">Bellevera Studio</div>
+  <nav>
+    <a href="#">Shop</a>
+    <a href="#">Planners</a>
+    <a href="#">Journals</a>
+    <a href="#">Templates</a>
+    <a href="#">About</a>
+  </nav>
 </header>
 
-<section class="products">
-  <h2>Featured Journals</h2>
-
-  <div class="product-card">
-    <h3>The Soft Discipline Reset</h3>
-    <p>A 7-day gentle reset designed to help you rebuild discipline without burnout.</p>
-
-    <!-- Replace with your Payhip button -->
-   <a href="https://payhip.com/b/ou87H"
-   class="payhip-add-to-cart-button buy-button"
-   data-product="ou87H">
-   Buy Now
-</a>
-
+<section class="hero">
+  <div class="hero-text">
+    <h1>Design Your Dream Life — Digitally.</h1>
+    <p>Premium planners, journals, and templates for women who move with intention.</p>
+    <a href="#shop" class="cta">Shop the Collection</a>
   </div>
+</section>
 
+<section id="shop" class="categories">
+  <h2>Shop by Category</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1607082349566-1870bba6c8dc" />
+      <h3>Luxury Digital Planners</h3>
+      <button>Shop Planners</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" />
+      <h3>Lifestyle Journals & Workbooks</h3>
+
+      <!-- PAYHIP BUTTON -->
+      <a href="https://payhip.com/b/ou87H"
+         class="payhip-add-to-cart-button"
+         data-product="ou87H">
+        Buy Now
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" />
+      <h3>Creative Templates</h3>
+      <button>Shop Templates</button>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <p>“Bellevera Studio redefined my daily routine. Absolutely stunning and effective.”</p>
+  <span>— Sophia R.</span>
+</section>
+
+<section class="newsletter">
+  <h2>Join the Glam Circle</h2>
+  <form>
+    <input type="email" placeholder="Email address">
+    <button>Subscribe</button>
+  </form>
 </section>
 
 <footer>
-  <p>© Bellevera Studio</p>
+  © Bellevera Studio
 </footer>
 
 </body>
