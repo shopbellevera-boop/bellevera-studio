@@ -3,85 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Bellevera Studio</title>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">Bellevera Studio</div>
 
-<!-- NAV -->
-<header class="navbar">
-  <div class="logo">Bellevera Studio</div>
-  <nav>
-    <a href="#">Shop</a>
-    <a href="#">Planners</a>
-    <a href="#">Journals</a>
-    <a href="#">Templates</a>
-    <a href="#">About</a>
-  </nav>
-</header>
+      <button class="menu-btn" aria-label="Open menu" onclick="document.body.classList.toggle('menu-open')">
+        ☰
+      </button>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Design Your Dream Life — Digitally.</h1>
-    <p>Premium planners, journals, and templates for women who move with intention.</p>
-    <a href="#" class="hero-btn">Shop the Collection</a>
-  </div>
-</section>
-
-<!-- CATEGORIES -->
-<section class="categories">
-  <h2>Shop by Category</h2>
-
-  <div class="category-grid">
-
-    <!-- PLANNERS -->
-    <div class="category-card">
-      <img src="images/planners.jpg" alt="Luxury Digital Planners">
-      <h3>Luxury Digital Planners</h3>
-      <a href="#" class="card-btn">Shop Planners</a>
+      <nav class="nav-links">
+        <a href="#shop">Shop</a>
+        <a href="#planners">Planners</a>
+        <a href="#journals">Journals</a>
+        <a href="#templates">Templates</a>
+        <a href="#about">About</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- JOURNALS -->
-    <div class="category-card">
-      <img src="images/journals.jpg" alt="Lifestyle Journals">
-      <h3>Lifestyle Journals & Workbooks</h3>
-      <a href="#" class="card-btn">Shop Journals</a>
+  <!-- HERO -->
+  <section class="hero" id="top" style="background-image:url('images/hero.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <h1>Design Your Dream<br/>Life — Digitally.</h1>
+        <p>Premium planners, journals, and templates for women who move with intention.</p>
+        <a class="btn btn-ghost" href="#shop">Shop the Collection</a>
+      </div>
     </div>
+  </section>
 
-    <!-- TEMPLATES -->
-    <div class="category-card">
-      <img src="images/templates.jpg" alt="Creative Templates">
-      <h3>Creative Templates</h3>
-      <a href="#" class="card-btn">Shop Templates</a>
+  <!-- SHOP BY CATEGORY -->
+  <section class="section" id="shop">
+    <div class="wrap">
+      <h2 class="section-title">Shop by Category</h2>
+
+      <div class="grid">
+        <!-- PLANNERS -->
+        <article class="card" id="planners">
+          <img class="card-img" src="images/planners.jpg" alt="Luxury Digital Planners" loading="lazy" />
+          <div class="card-body">
+            <h3>Luxury Digital Planners</h3>
+            <a class="btn btn-solid" href="#planners">Shop Planners</a>
+          </div>
+        </article>
+
+        <!-- JOURNALS -->
+        <article class="card" id="journals">
+          <img class="card-img" src="images/journals.jpg" alt="Lifestyle Journals & Workbooks" loading="lazy" />
+          <div class="card-body">
+            <h3>Lifestyle Journals &amp; Workbooks</h3>
+            <a class="btn btn-solid" href="#journals">Shop Journals</a>
+          </div>
+        </article>
+
+        <!-- TEMPLATES -->
+        <article class="card" id="templates">
+          <img class="card-img" src="images/templates.jpg" alt="Creative Templates" loading="lazy" />
+          <div class="card-body">
+            <h3>Creative Templates</h3>
+            <a class="btn btn-solid" href="#templates">Shop Templates</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- TESTIMONIAL -->
+      <div class="quote">
+        <p>“Bellevera Studio redefined my daily routine. Absolutely stunning and effective.”</p>
+        <span>— Sophia R.</span>
+      </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- NEWSLETTER -->
+  <section class="newsletter" id="about">
+    <div class="wrap newsletter-inner">
+      <div class="newsletter-title">Join the Glam Circle</div>
 
-<!-- TESTIMONIAL -->
-<section class="testimonial">
-  <p>
-    “Bellevera Studio redefined my daily routine. Absolutely stunning and effective.”
-  </p>
-  <span>— Sophia R.</span>
-</section>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+        <input type="email" placeholder="Email address" required />
+        <button class="btn btn-solid" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
 
-<!-- FOOTER CTA -->
-<section class="newsletter">
-  <h2>Join the Glam Circle</h2>
-  <div class="newsletter-form">
-    <input type="email" placeholder="Email address">
-    <button>Subscribe</button>
-  </div>
-</section>
+  <footer class="footer">
+    <div class="wrap">© <span id="year"></span> Bellevera Studio</div>
+  </footer>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
