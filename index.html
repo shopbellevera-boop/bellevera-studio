@@ -1,80 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bellevera Studio</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- NAV -->
-<header class="navbar">
-  <div class="logo">Bellevera Studio</div>
-  <nav>
-    <a href="#shop">Shop</a>
-    <a href="#planners">Planners</a>
-    <a href="#journals">Journals</a>
-    <a href="#templates">Templates</a>
-    <a href="#about">About</a>
-  </nav>
-</header>
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="logo">Bellevera Studio</div>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#">Planners</a>
+      <a href="#">Journals</a>
+      <a href="#">Templates</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Design Your Dream<br>Life — Digitally.</h1>
-    <p>Premium planners, journals, and templates for women who move with intention.</p>
-    <a class="btn-outline" href="#shop">Shop the Collection</a>
-  </div>
-</section>
-
-<!-- CATEGORIES -->
-<section class="categories" id="shop">
-  <h2>Shop by Category</h2>
-
-  <div class="category-grid">
-
-    <!-- PLANNERS -->
-    <div class="category-card">
-      <img src="images/planners.jpg" alt="Luxury Digital Planners">
-      <h3>Luxury Digital Planners</h3>
-      <a class="btn" href="#">Shop Planners</a>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Design Your Dream<br>Life — Digitally.</h1>
+      <p>Premium planners, journals, and templates for women who move with intention.</p>
+      <a href="#shop" class="btn-outline">Shop the Collection</a>
     </div>
+  </section>
 
-    <!-- JOURNALS -->
-    <div class="category-card">
-      <img src="images/journals.jpg" alt="Lifestyle Journals">
-      <h3>Lifestyle Journals & Workbooks</h3>
-      <a class="btn" href="#">Shop Journals</a>
+  <!-- SHOP BY CATEGORY -->
+  <section id="shop" class="categories">
+    <h2>Shop by Category</h2>
+
+    <div class="category-grid">
+
+      <div class="category-card">
+        <img src="images/planners.jpg" alt="Luxury Digital Planners">
+        <h3>Luxury Digital Planners</h3>
+        <a class="btn" href="#">Shop Planners</a>
+      </div>
+
+      <div class="category-card">
+        <img src="images/journals.jpg" alt="Lifestyle Journals & Workbooks">
+        <h3>Lifestyle Journals & Workbooks</h3>
+        <a class="btn" href="#">Shop Journals</a>
+      </div>
+
+      <div class="category-card">
+        <img src="images/templates.jpg" alt="Creative Templates">
+        <h3>Creative Templates</h3>
+        <a class="btn" href="#">Shop Templates</a>
+      </div>
+
     </div>
+  </section>
 
-    <!-- TEMPLATES -->
-    <div class="category-card">
-      <img src="images/templates.jpg" alt="Creative Templates">
-      <h3>Creative Templates</h3>
-      <a class="btn" href="#">Shop Templates</a>
-    </div>
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <p>
+      “Bellevera Studio redefined my daily routine. Absolutely stunning and effective.”
+      <span>— Sophia R.</span>
+    </p>
+  </section>
 
-  </div>
-</section>
-
-<!-- TESTIMONIAL -->
-<section class="testimonial">
-  <p>
-    “Bellevera Studio redefined my daily routine. Absolutely stunning and effective.”
-    <span>— Sophia R.</span>
-  </p>
-</section>
-
-<!-- EMAIL -->
-<section class="newsletter">
-  <h2>Join the Glam Circle</h2>
-  <form>
-    <input type="email" placeholder="Email address">
-    <button>Subscribe</button>
-  </form>
-</section>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 Bellevera Studio. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
