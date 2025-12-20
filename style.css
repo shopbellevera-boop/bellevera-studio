@@ -256,3 +256,48 @@ body {
   color: #e7bfc6;
 }
 
+/* ============================= */
+/* MOBILE HAMBURGER MENU */
+/* ============================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    z-index: 1000;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
