@@ -306,4 +306,19 @@ body {
   }
 }
 
+/* FIX MOBILE LINK BLOCKING ISSUE */
+@media (max-width: 768px) {
+
+  .nav-links {
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .nav-links.show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+}
+
 
